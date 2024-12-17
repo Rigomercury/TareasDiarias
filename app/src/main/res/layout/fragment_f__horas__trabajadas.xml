@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- CAMPOS PARA EL FECHA ACTUAL -->
+    <TextView
+        android:id="@+id/label_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_actual"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"/>
+    <EditText
+        android:id="@+id/editFechaActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_fecha"
+        android:layout_margin="16dp"
+        android:inputType="date"
+        tools:ignore="TextViewEdits" />
+
+    <!-- CAMPOS PARA NOMBRE DEL EMPLEADO -->
+
+    <!-- LINEARLAYOUT PARA LAS HORAS DE ENTRADA Y SALIDA -->
+    <LinearLayout
+        android:id="@+id/layout_horas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editFechaActual"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_entrada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/label_entrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hora_de_entrada"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_entrada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="time" />
+               <Button
+                   android:id="@+id/btn_ingresar_hora_entrada"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="IN"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_Salida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_salida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hora_de_salida"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_salida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="time" />
+
+            <Button
+                android:id="@+id/btn_ingresar_hora_Salida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OUT"/>
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_calculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_horas"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular_horas_extras"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:id="@+id/tvCalculosHorasExtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_calculos">
+
+        <include layout="@layout/item_header"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerView_horasExtras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            tools:listitem="@layout/item_horas_extras"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

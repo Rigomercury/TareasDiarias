@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/Opcion_Todas"
+        android:title="@string/Opcion_Todas"
+        android:icon="@drawable/icono_todas"
+        />
+    <item
+        android:id="@+id/Opcion_Parcial"
+        android:title="@string/Opcion_Parcial"
+        android:icon="@drawable/icono_todas"
+        />
+    <item
+        android:id="@+id/Opcion_Ajustes"
+        android:title="@string/Opcion_Ajuste"
+        android:icon="@drawable/icono_ajustes"
+        />
+    <item
+        android:id="@+id/Opcion_Escanear"
+        android:title="@string/Opcion_Escanear"
+        android:icon="@drawable/icono_todas"
+        />
+    <item
+        android:id="@+id/Opcion_Acerca"
+        android:title="@string/Opcion_Acerca"
+        android:icon="@drawable/icono_informacion"
+        />
+    <item
+        android:id="@+id/Opcion_Asistencia"
+        android:title="@string/Opcion_Asistencia"
+        android:icon="@drawable/icono_todas"
+        />
+    <item
+        android:id="@+id/Opcion_Salir"
+        android:title="@string/Opcion_Salir"
+        android:icon="@drawable/icono_salir"
+        />
+</menu>

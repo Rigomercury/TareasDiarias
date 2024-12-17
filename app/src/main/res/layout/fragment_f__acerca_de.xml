@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragmentos.F_AcercaDe">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="acercade.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans_condensed_bold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Txt_Desarrollado" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans_condensed_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Txt_Desarrollador" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/opensans_condensed_bold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Txt_titulo_Contacto" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans_condensed_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Txt_Contacto" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/opensans_condensed_bold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Txt_Titulo_Version" />
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensans_condensed_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Txt_Version" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Ir_youtube"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ytu"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Ir_instagram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ins"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Ir_facebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/face"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Ir_twiter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/tw"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Ir_whatsaap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ws"/>
+            
+            
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

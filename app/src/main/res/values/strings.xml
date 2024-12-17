@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Tareas App</string>
+    <!--DRAWER MENU-->
+    <string name="Opcion_Todas">Todas</string>
+    <string name="Opcion_Escanear">Escanear</string>
+    <string name="Opcion_Asistencia">Asistencia</string>
+    <string name="Opcion_Parcial">Parcial</string>
+    <string name="Opcion_Acerca">Acerca de</string>
+    <string name="Opcion_Ajuste">Ajustes</string>
+
+    <string name="Opcion_Salir">Salir</string>
+
+    <!--DRAWER LAYOUT-->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!--FAB-->
+    <string name="FAB_AgregarPassword">Agregar</string>
+    <string name="FAB_escanner">Escanear</string>
+
+    <!--DISEÑO AGREGAR TAREA-->
+    <string name="EtNotaVenta">Nota de Venta</string>
+    <string name="EtCliente">Cliente</string>
+    <string name="EtCodigo">Luminaria</string>
+    <string name="EtCantidad">Cantidad</string>
+    <string name="EtEtapa">Etapa</string>
+    <string name="EtNota">Nota</string>
+
+    <!--AGREGAR PASSWORD-->
+    <string name="Guardar_Password">Guardar</string>
+    <string name="Volver">Volver</string>
+
+    <!--Item Password-->
+    <string name="Item_notavta">Nota de Venta</string>
+    <string name="Item_cliente">Cliente</string>
+    <string name="Item_codigo">Luminaria</string>
+    <string name="Item_cantidad">Cantidad</string>
+    <string name="Item_parcial">Parcial</string>
+    <string name="Item_restante">Restante</string>
+    <string name="Item_etapa">Etapa</string>
+    <string name="Item_nota">Nota</string>
+    <string name="Item_fecha">Fecha</string>
+
+    <!--menu fragmentos todas-->
+    <string name="menu_Numero_registros">Numero de Registros</string>
+    <string name="menu_Buscar_registros">Buscar Registros</string>
+    <string name="menu_ordenar_registro">Ordenar Registros</string>
+    <string name="menu_compartir">Compartir</string>
+
+    <!--cuadro de dialogo - numero de registro-->
+    <string name="TxtTotal">Total de Registros</string>
+    <string name="Total">--</string>
+    <string name="BtnEntendidoTotal">Entendido</string>
+
+    <!--Detalle de registros-->
+    <string name="Txt_D_Notavta">Nota Venta: </string>
+    <string name="D_Notavta"> -- </string>
+    <string name="Txt_D_Cliente">Cliente: </string>
+    <string name="D_Cliente"> -- </string>
+    <string name="Txt_D_Codigo">Codigo: </string>
+    <string name="D_Codigo"> -- </string>
+    <string name="Txt_D_Cantidad">Cantidad: </string>
+    <string name="D_Cantidad"> -- </string>
+    <string name="Txt_D_Parcial">Parcial: </string>
+    <string name="D_Parcial"> -- </string>
+    <string name="Txt_D_Restante">Restante: </string>
+    <string name="D_Restante"> -- </string>
+
+    <string name="Txt_D_Etapa">Etapa: </string>
+    <string name="D_Etapa"> -- </string>
+    <string name="Txt_D_Nota">Nota: </string>
+    <string name="D_Nota"> -- </string>
+    <string name="Txt_D_Inicio">Inicio: </string>
+    <string name="D_Inicio"> -- </string>
+    <string name="Txt_D_Termino">Termino: </string>
+    <string name="D_Termino"> -- </string>
+
+    <!--Cuadro de dialogo editas - eliminar registro-->
+    <string name="Btn_Editar_Registro">Editar</string>
+    <string name="Btn_Eliminar_Registro">Eliminar</string>
+
+    <!--ordenar registros-->
+    <string name="Btn_nuevos">Nuevos</string>
+    <string name="Btn_Pasados">Pasados</string>
+    <string name="Btn_Asc">A-Z</string>
+    <string name="Btn_Desc">Z-A</string>
+
+    <!--Ajustes-->
+    <string name="Txt_Ajustes">Ajustes</string>
+    <string name="Eliminar_todos_registros">Eliminar todos los registros</string>
+    <string name="Exportar_Archivo">Exportar archivo CSV</string>
+    <string name="Cambiar_Password_Maestra">Cambiar contraseña maestra</string>
+    <string name="Importar_Archivo">Importar archivo CSV</string>
+
+    <!--cuaro de dialogo mensaje-->
+    <string name="pregunta_Txt">¿Estas seguro(a) de eliminar todos los registros?</string>
+    <string name="pregunta_expor_registros">¿Estas seguro(a) que desea exportar todos los registros?</string>
+    <string name="Btn_Si">Si, estoy de acuerdo(a)</string>
+    <string name="Btn_Cancelar">Cancelar</string>
+
+    <!--Cuadro dialogo - maestra-->
+    <string name="Txt_password_maestra">Su contraseña maestra es:</string>
+    <string name="Password_maestra"> -- </string>
+    <string name="Et_nuevo_password_maestra">Nueva contraseña maestra</string>
+    <string name="Et_C_nuevo_password_maestra">Confirme contraseña maestra</string>
+    <string name="Btn_cambiar_password_maestra">Cambiar</string>
+    <string name="Btn_cancelar_password_maestra">Cancelar</string>
+
+
+    <!--Cerrar_imagen-->
+    <string name="Btn_cerrar_imagen">Cerrar</string>
+
+    <!--Registro-->
+    <string name="TxtBienvenidos">¡Bienvenidos(as)!</string>
+    <string name="TxtMesaje">Por favor introduzca un contraseña maestra</string>
+    <string name="EtPasswordU">Contraseña</string>
+    <string name="EtPassword1">Confirmar contraseña</string>
+    <string name="Btnregistrar">Registrar</string>
+
+    <!--Login-->
+    <string name="BtnIngresarar">Ingresar</string>
+
+    <!--Inicio sesion biometrico-->
+    <string name="Txt_otro_metodo">Otro metodo</string>
+    <string name="BtnInicioSesionBiometrico">Autenticacion Biometrica</string>
+
+    <!--Acerca De-->
+    <string name="Txt_Desarrollado">Desarrollado por:</string>
+    <string name="Txt_Desarrollador">Rodrigo Aguero(RigoDev)</string>
+    <string name="Txt_titulo_Contacto">Contacto:</string>
+    <string name="Txt_Contacto">rodri.aguero.7446@gmail.com</string>
+    <string name="Txt_Titulo_Version">Version:</string>
+    <string name="Txt_Version">1.0</string>
+
+    <string name="hello_blank_fragmentF_A">Hello blank fragmentAjuste</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="codigo_a_escanear">Codigo a Escanear</string>
+    <string name="escanear">Escanear</string>
+    <string name="ingresar_datos">Ingresar Datos</string>
+    <string name="nombre_del_empleado">Nombre del Empleado:</string>
+    <string name="hora_de_entrada">Hora de Entrada:</string>
+    <string name="hora_de_salida">Hora de Salida:</string>
+    <string name="calcular_horas_extras">Calcular Horas Extras</string>
+    <string name="horas_extras">Horas Extras:</string>
+    <string name="fecha_actual">Fecha Actual:</string>
+    <string name="fecha">Fecha</string>
+    <string name="entrada">Entrada</string>
+    <string name="salida">Salida</string>
+    <string name="horas_extras_headers">Horas Extras</string>
+</resources>

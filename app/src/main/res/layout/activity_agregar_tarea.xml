@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".OpcionesTareas.Agregar_Actualizar_Registro">
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mega"
+            android:layout_gravity="center"/>
+
+        <!--Nota de Venta-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EtNotaVenta"
+                android:hint="@string/EtNotaVenta"
+                android:padding="15dp"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:inputType="number"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Cliente-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EtCliente"
+                android:hint="@string/EtCliente"
+                android:padding="15dp"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Luminaria-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/EtCodigo"
+                android:hint="@string/EtCodigo"
+                android:padding="15dp"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Cantidad-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:textSize="15sp"
+                android:padding="7dp"
+                android:text="Inicial:"/>
+            <EditText
+                android:id="@+id/EtCantidad"
+                android:padding="15dp"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:textSize="15sp"
+                android:padding="7dp"
+                android:text="Parcial:"/>
+            <EditText
+                android:id="@+id/EtParcial"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="25dp"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:textSize="15sp"
+                android:padding="7dp"
+                android:text="Resta"/>
+            <TextView
+                android:id="@+id/TvRestante"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <!--Etapa-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EtEtapa"
+                android:hint="@string/EtEtapa"
+                android:padding="15dp"
+                android:textSize="25sp"
+                android:maxLines="1"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Nota-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/EtNota"
+                android:hint="@string/EtNota"
+                android:textSize="25sp"
+                android:height="150dp"
+                android:padding="15dp"
+                android:layout_gravity="start"
+                android:fontFamily="@font/opensans_condensed_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Iv_eliminar_imagen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/eliminarima"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

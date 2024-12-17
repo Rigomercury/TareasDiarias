@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".Login_usuario.Logeo_usuario">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/mega"
+        />
+
+    <TextView
+        android:id="@+id/TxtBienvenidos"
+        android:text="@string/TxtBienvenidos"
+        android:textSize="25sp"
+        android:fontFamily="@font/opensans_condensed_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/EtPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/opensans_condensed_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rigo7446"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/BtnIngresarar"
+        android:text="@string/BtnIngresarar"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensans_condensed_regular"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

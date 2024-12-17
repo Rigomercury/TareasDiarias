@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragmentos.F_Escanner">
+
+
+    <com.journeyapps.barcodescanner.CompoundBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+
+    <EditText
+        android:id="@+id/etCodigoEscanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:autofillHints="@string/codigo_a_escanear"
+        android:inputType="number"
+        tools:ignore="LabelFor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="506dp"
+        android:layout_above="@id/fab_container"
+        android:layout_marginBottom="1dp" />
+
+    <LinearLayout
+        android:id="@+id/fab_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FAB_Scanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#b71c1c"
+            android:contentDescription="@string/FAB_escanner"
+            android:src="@drawable/icono_agregar" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FAB_Exportar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#b71c1c"
+            android:contentDescription="@string/FAB_escanner"
+            android:src="@drawable/icon_compartir" />
+    </LinearLayout>
+</RelativeLayout>
+
